@@ -125,7 +125,7 @@ function addPost() {
           class="bg-indigo-950 text-white"
           :disabled="posts.currentPage === 1"
         >
-          &lt;
+          <
         </Button>
 
         <Button
@@ -143,7 +143,7 @@ function addPost() {
           class="bg-indigo-950 text-white"
           :disabled="posts.currentPage === totalPages"
         >
-          &gt;
+          >
         </Button>
       </div>
     </div>
