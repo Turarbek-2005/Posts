@@ -1,4 +1,8 @@
 <script setup lang="ts">
+useSeoMeta({
+  title: "Posts",
+});
+
 const colorMode = useColorMode();
 colorMode.preference = "light";
 </script>
