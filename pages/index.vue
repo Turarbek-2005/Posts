@@ -107,12 +107,15 @@ function addPost() {
 
       <div class="gap-5 flex flex-col">
         <div
-          class="w-full bg-indigo-950 text-white p-3 rounded-2xl"
+          class="w-full bg-indigo-950 text-white p-3 rounded-2xl relative"
           v-for="post in displayedPosts"
           :key="post.id"
         >
           <h3 class="text-2xl font-bold">{{ post.title }}</h3>
           <p class="text-lg">{{ post.body }}</p>
+          <label class="text-lg absolute right-5 top-2"
+            >id: {{ post.id }}</label
+          >
         </div>
       </div>
 
