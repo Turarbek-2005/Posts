@@ -74,7 +74,7 @@ function addPost() {
           Sort by ID ({{ posts.isAscending ? "Ascending" : "Descending" }})
         </Button>
 
-        <Button class="mb-5 w-64 text-xl bg-indigo-800 hover:bg-indigo-950">
+        <Button class="mb-5 w-64 text-xl bg-indigo-800 hover:bg-indigo-950 p-0">
           <Dialog>
             <DialogTrigger
               class="w-full h-full flex justify-center items-center"
@@ -94,7 +94,7 @@ function addPost() {
                   v-model="formData.body"
                 />
                 <Button
-                  class="w-1/4 text-xl mx-auto flex bg-indigo-800 hover:bg-indigo-950"
+                  class="w-1/4 text-xl mx-auto flex bg-indigo-800 hover:bg-indigo-950 p-0"
                   @Click="addPost"
                 >
                   Add Post
